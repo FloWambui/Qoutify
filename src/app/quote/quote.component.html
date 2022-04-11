@@ -2,7 +2,7 @@
     <h1>Qoutify Qoutes.<br>Inspiration to Fuel you up!</h1>
     <hr>
     <ul>
-      <li *ngFor='let quote of qoutes'>{{quote.name}}
+      <li *ngFor='let quote of qoutes'>{{quote.quote}}
         <app-quote-detail [quote]='quote'></app-quote-detail>
       </li>
     </ul>
