@@ -15,3 +15,8 @@ p {
   align-items: center;
   text-align: center;
 }
+fa-icon{
+  font-size: 36px;
+  font-weight: 800;
+  color: gold;
+}

@@ -10,12 +10,12 @@ export class HighlightDirective {
 
   @HostListener('click') onClick(){
     // this.textDeco()
-    this.elem.nativeElement.style.backgroundColor='yellow'
+    this.elem.nativeElement.style.backgroundColor='salmon'
   }
   
   @HostListener('dblclick') onDoubleClicks(){
     // this.textDeco(false)
-    this.elem.nativeElement.style.backgroundColor='white'
+    this.elem.nativeElement.style.backgroundColor='black'
   }
 
   // private textDeco(action:boolean){

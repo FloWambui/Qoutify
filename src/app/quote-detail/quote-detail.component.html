@@ -3,6 +3,20 @@
     <p>Name: {{quote.name}}.</p>
     <p> Posted on: {{quote.publishDate|date|uppercase}}.</p>
     <p>{{quote.publishDate|dateCount}} days have Elapsed since this quote was Authored.</p>
-    <button (click)="quoteDelete(true)" type="button" class="btn btn-danger delete">Delete Quote</button>
+    <div class="row">
+        <div class="col-md-6">
+            <a href="" (click)="upVote()">
+                <fa-icon [icon]="faThumbsUp"></fa-icon>
+                <!-- <br class="word-display"> UpVote -->
+            </a>({{likes}})
+        </div>
+        <div class="col-md-6">
+            <a href="" (click)="downVote()">
+                <fa-icon [icon]="faThumbsDown"></fa-icon>
+                <!-- <br class="word-display"> DownVote -->
+            </a>({{dislikes}})
+        </div>
+    </div>
+    <button (click)="quoteDelete(true)" type="button" class="btn btn-danger delete my-3">Delete Quote</button>
 </div>
 
