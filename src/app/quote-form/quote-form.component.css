@@ -9,5 +9,12 @@ form{
 }
 input, textarea{
     background-color: transparent;
+    font-size: 24px;
+    color: white;
     
+}
+.form-control:focus, .form-control:active{
+    background: transparent;
+    font-size: 24px;
+    color: white;
 }
