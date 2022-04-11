@@ -2,8 +2,10 @@
     <h1>Qoutify Qoutes.<br>Inspiration to Fuel you up!</h1>
     <hr>
     <ul>
-      <li *ngFor='let quote of qoutes'>{{quote.quote}}
-        <app-quote-detail [quote]='quote'></app-quote-detail>
-      </li>
+      <div *ngFor='let quote of qoutes; let i =index'>
+        <li>{{quote.quote}}</li>
+        <button (click)="toggleDetails(i)">Show More</button>
+        <app-quote-detail *ngIf='quote.showDescription'[quote]='quote'></app-quote-detail>
+      </div>  
     </ul>
   </div>
