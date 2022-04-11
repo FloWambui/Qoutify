@@ -1,0 +1,13 @@
+form{
+    font-size: 20px;
+}
+#complete{
+    padding: 10px;
+    font-size: 14px;
+    color: white;
+    border: 1px solid white;
+}
+input, textarea{
+    background-color: transparent;
+    
+}

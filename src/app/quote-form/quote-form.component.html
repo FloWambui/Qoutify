@@ -1,0 +1,75 @@
+<div class="container-fluid">
+  <h2 class="text-center pb-2">Add a New Quote</h2>
+
+  <form #quoteForm="ngForm">
+    <div class="form-group pb-5">
+      <label for="author" class="pb-3">Author:</label>
+      <input
+        type="text"
+        required
+        class="form-control"
+        id="author"
+        [(ngModel)]="newQuote.author"
+        name="author"
+        #author="ngModel"
+        required
+      />
+      <div
+        [hidden]="author.valid || author.pristine"
+        class="alert alert-danger"
+      >
+        <p>Author is required</p>
+      </div>
+    </div>
+    <div class="form-group pb-5">
+      <label for="quote" class="pb-3">Quote:</label>
+      <textarea
+        class="form-control"
+        id="description"
+        rows="8"
+        [(ngModel)]="newQuote.quote"
+        name="quote"
+        #quote="ngModel"
+        required
+      ></textarea>
+      <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
+        <p>Quote Entry is required</p>
+      </div>
+    </div>
+    <div class="form-group pb-5">
+      <label for="complete" class="px-3">Authored Date:</label>
+      <input
+        type="date"
+        id="complete"
+        [(ngModel)]="newQuote.publishDate"
+        name="publishDate"
+        #publishDate="ngModel"
+        required
+      />
+      <div
+        [hidden]="publishDate.valid || publishDate.pristine"
+        class="alert alert-danger"
+      >
+        <p>Date is required</p>
+      </div>
+      
+    </div>
+    <div class="form-group">
+      <label for="name" class="pb-3">Posted By:</label>
+      <input
+        type="text"
+        required
+        class="form-control"
+        id="name"
+        [(ngModel)]="newQuote.name"
+        name="name"
+        #name="ngModel"
+        required
+      />
+      <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+        <p>Name is required</p>
+      </div>
+      
+    </div>
+  </form>
+</div>
