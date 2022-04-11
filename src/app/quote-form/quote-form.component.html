@@ -1,7 +1,7 @@
 <div class="container-fluid">
   <h2 class="text-center pb-2">Add a New Quote</h2>
 
-  <form #quoteForm="ngForm">
+  <form (ngSubmit)='submitQuote()' #quoteForm="ngForm">
     <div class="form-group pb-5">
       <label for="author" class="pb-3">Author:</label>
       <input
@@ -71,5 +71,6 @@
       </div>
       
     </div>
+    <button type="submit" class="btn btn-warning p-2 my-5" >Add Quote</button>
   </form>
 </div>
