@@ -1,0 +1,17 @@
+.delete {
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 800;
+  color: black;
+}
+p {
+  font-size: 18px;
+  font-weight: 700;
+  color: gold;
+}
+.cnt {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
