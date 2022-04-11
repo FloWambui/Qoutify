@@ -1,11 +1,19 @@
-<div>
+<div class="container">
+  <div class="header text-center">
     <h1>Qoutify Qoutes.<br>Inspiration to Fuel you up!</h1>
-    <hr>
-    <ul>
-      <div *ngFor='let quote of qoutes; let i =index'>
-        <li appHighlight>{{quote.quote}}</li>
-        <button (click)="toggleDetails(i)">Show More</button>
-        <app-quote-detail *ngIf='quote.showDescription'[quote]='quote' (isComplete) ='deleteQuote($event,i)'></app-quote-detail>
-      </div>  
-    </ul>
+    <hr class="pb-2">
   </div>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6">
+      <div *ngFor='let quote of qoutes; let i =index'>
+        <h5 id={{i}} appHighlight class="pt-4">{{quote.quote}}</h5>
+        <button (click)="toggleDetails(i)" type="button" class="btn btn-warning show">Show More</button>
+        <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isComplete)='deleteQuote($event,i)'>
+        </app-quote-detail>
+      </div>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,16 @@
+h1{
+     font-family: 'Rubik Wet Paint', cursive;
+     font-size: 50px;
+}
+hr{
+    color: gold;
+}
+h5{
+    font-size: 24px;
+}
+.show{
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 800;
+}
