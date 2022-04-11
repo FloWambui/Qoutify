@@ -10,7 +10,7 @@ export class HighlightDirective {
 
   @HostListener('click') onClick(){
     // this.textDeco()
-    this.elem.nativeElement.style.backgroundColor='salmon'
+    this.elem.nativeElement.style.backgroundColor='rgba(100, 210, 200)'
   }
   
   @HostListener('dblclick') onDoubleClicks(){
@@ -27,7 +27,5 @@ export class HighlightDirective {
   //  }
 
 }
-function gold(gold: any) {
-  throw new Error('Function not implemented.');
-}
+
 
