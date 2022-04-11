@@ -14,7 +14,9 @@ export class QuoteComponent implements OnInit {
    new Quote (3, '"We fear the future because we are wasting today."','Mother Teresa', 'Flo Wambui'),
    new Quote (4, '"Once a rular becomes religious,it becomes impossible for you to debate with him. Once someone rules in the name of religion, your lives become hell."', 'Muammar al-Gaddafi' , 'Flo Wambui'),
   ];
-
+  toggleDetails(index:any){
+    this.qoutes[index].showDescription = !this.qoutes[index].showDescription;
+  }
   constructor() { }
 
   ngOnInit(): void {
