@@ -16,6 +16,7 @@
 * An access to the Internet
 * Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
+* This is the live link to the app (https://flowambui.github.io/Qoutify/)
 ### Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
